@@ -1,0 +1,76 @@
+
+// 战斗界面相关.
+// Changing of the interface in battle.
+
+{
+	
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": true,
+	
+	// 设置读秒时的玩家栏
+	// 可选项目 - none, short, medium, medium2, large.
+	// Players panel state when counting up the fight.
+	// Possible values ​​- none, short, medium, medium2, large.
+	"playersPanelState": "large",
+	
+	// 第六感灯炮的显示时间
+	// Duration displaying light indicator (lamp) in seconds.
+	"sixthSenseDuration": 10.0,
+	
+	// Отображать углы горизонтальной наводки на всех типах техники (0.9.5 - ВГ Миникарта).
+	// Display traverse angles on all types of vehicles (0.9.5 - WG minimap).
+	"minimapAnglesFix": false,
+	
+	// Скрывать сообщения о формированиях динамических взводов
+	// Hide messages about the formation of dynamic platoons
+	"hideDynSquadMessages": false,
+	
+	// Отображать риббоны в реплеях
+	// Show ribbons in replays
+	"showBattleRibbons": true,
+	
+	// Хп команд
+	// Teams Health
+	"teamHealth": {
+		
+		// true - включить функцию.
+		// true - enable function.	
+		"enable": false,
+		
+		// Выбор оформления 
+		// Возможные значения - armagomen, locastan, minimal, wgl
+		// Skin select
+		// Possible values ​​- armagomen, locastan, minimal, wgl
+		"skin": "armagomen",
+		
+		// Отображать информацию о медали "Основной калибр" (Если предусмотрено скином).
+		// Display information about medal "Main gun" (If skin provided them).
+		"displayMainGun": true,
+		
+		// Отображать информацию о уроне (Если предусмотрено скином).
+		// Display information about damage (If skin provided them).
+		"displayDamage": true,
+		
+		// Кастомизация текстовых полей
+		// Customization of text fields
+		"texts": {
+			// armagomen
+			"damageDealt": "<font color='#E0E0E0' size='16'>({{piercedHits}}) <font color='#E0E06D'>{{damageDealt}}</font></font> <img src='img://gui/maps/icons/library/dossier/avgDamage40x32.png' width='30' height='23' vspace='-7'>",
+			"mainGunProcess": "<img src='img://gui/maps/icons/achievement/32x32/mainGun.png' width='23' height='23' vspace='-7'> <font color='#E0E0E0' size='16'>伤害手: <font color='#E0E06D'>{{mainGun}}</font></font>",
+			"mainGunFailed": "<img src='img://gui/maps/icons/achievement/32x32/mainGun.png' width='23' height='23' vspace='-7'> <font color='#FFB0B0'>无法达成</font>",
+			"mainGunAchived": "<img src='img://gui/maps/icons/achievement/32x32/mainGun.png' width='23' height='23' vspace='-7'> <img src='img://gui/maps/icons/library/done.png' width='23' height='23' vspace='-7'>"
+			
+			// locastan
+			// "mainGun": "Основной калибр ({{mainGun}})",  
+			// "allysHP": "Союзники ({{allysHP}})",
+			// "enemysHP": "({{enemysHP}}) Противники"
+			
+			// minimal
+			// "averageDamageBad": "Средний урон: {{averageDamage}}", 
+			// "averageDamageGood": "Средний урон: <font color='#A9FD00'>+{{averageDamage}}</font>", 
+			// "mainGunProcess": "Основной калибр: {{mainGun}}",
+			// "mainGunAchived": "Основной калибр: <font color='#A9FD00'>+{{mainGun}}</font>"
+		}
+	}
+}

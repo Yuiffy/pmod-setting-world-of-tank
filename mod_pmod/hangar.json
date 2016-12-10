@@ -1,0 +1,53 @@
+
+// 车库插件.
+// Hangar part of the mod.
+
+{
+	
+	// true - включить модуль.
+	// true - enable the module.
+	"enable" : true,
+	
+	// 一键装卸插件
+	// Removing and attaching replaceable equipment in 1 click.
+	"autoEquip": {
+		
+		// true - включить функцию.
+		// true - enable function.			
+		"enable" : true,
+		
+		// 功能快捷键
+		// Button by which pressing function is activated.
+		"equipKey": "F3",
+		
+		// 优先换装顺序
+		// telescope - 炮队, mesh - 伪装网, toolbox - 大修理箱
+		// Priority replaceable equipment.
+		"equipPriority": ["telescope", "mesh", "toolbox"]
+	},
+	
+	// 车库消息过滤
+	// Hangar messeges filter
+	"messagesCleaner": {
+		
+		// true - включить функцию.
+		// true - enable function.	
+		"enable": false,
+		
+		// 允许弹出消息
+		// Pop-up messages in the hangar.
+		"popUpMessages": false,
+		
+		// 允许系统消息
+		// Messages in the system channel.
+		"systemLog": false,
+		
+		// 过滤掉的消息
+		// List of strings which delete popup messages.
+		"maskPopUp": ["вы не меняли пароль", "добро пожаловать на сервер", "ремонт", "куплено"],
+		
+		// Список строк по которым удаляются сообщения в системном канале.
+		// List of strings which delete messages from system channel.
+		"maskSysLog": ["вы не меняли пароль", "добро пожаловать на сервер"]
+	}
+}
